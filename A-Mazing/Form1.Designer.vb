@@ -29,6 +29,9 @@ Partial Class Form1
         Me.NumericUpDownPrunning = New System.Windows.Forms.NumericUpDown()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.RichTextBoxMessages = New System.Windows.Forms.RichTextBox()
+        Me.ButtonGrayMaze = New System.Windows.Forms.Button()
+        Me.ButtonPrunning = New System.Windows.Forms.Button()
+        Me.ButtonAMazeII = New System.Windows.Forms.Button()
         CType(Me.PictureBoxMazeInput, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDownPrunning, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -55,7 +58,7 @@ Partial Class Form1
         'ButtonAMaze
         '
         Me.ButtonAMaze.Enabled = False
-        Me.ButtonAMaze.Location = New System.Drawing.Point(328, 31)
+        Me.ButtonAMaze.Location = New System.Drawing.Point(456, 144)
         Me.ButtonAMaze.Name = "ButtonAMaze"
         Me.ButtonAMaze.Size = New System.Drawing.Size(181, 46)
         Me.ButtonAMaze.TabIndex = 2
@@ -65,7 +68,7 @@ Partial Class Form1
         'ButtonSaveMaze
         '
         Me.ButtonSaveMaze.Enabled = False
-        Me.ButtonSaveMaze.Location = New System.Drawing.Point(591, 31)
+        Me.ButtonSaveMaze.Location = New System.Drawing.Point(794, 30)
         Me.ButtonSaveMaze.Name = "ButtonSaveMaze"
         Me.ButtonSaveMaze.Size = New System.Drawing.Size(154, 46)
         Me.ButtonSaveMaze.TabIndex = 3
@@ -74,17 +77,17 @@ Partial Class Form1
         '
         'NumericUpDownPrunning
         '
-        Me.NumericUpDownPrunning.Location = New System.Drawing.Point(668, 127)
+        Me.NumericUpDownPrunning.Location = New System.Drawing.Point(578, 96)
         Me.NumericUpDownPrunning.Maximum = New Decimal(New Integer() {500, 0, 0, 0})
         Me.NumericUpDownPrunning.Name = "NumericUpDownPrunning"
         Me.NumericUpDownPrunning.Size = New System.Drawing.Size(76, 26)
         Me.NumericUpDownPrunning.TabIndex = 4
-        Me.NumericUpDownPrunning.Value = New Decimal(New Integer() {15, 0, 0, 0})
+        Me.NumericUpDownPrunning.Value = New Decimal(New Integer() {100, 0, 0, 0})
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(526, 127)
+        Me.Label1.Location = New System.Drawing.Point(436, 96)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(127, 20)
         Me.Label1.TabIndex = 5
@@ -92,17 +95,50 @@ Partial Class Form1
         '
         'RichTextBoxMessages
         '
-        Me.RichTextBoxMessages.Location = New System.Drawing.Point(462, 174)
+        Me.RichTextBoxMessages.Location = New System.Drawing.Point(665, 173)
         Me.RichTextBoxMessages.Name = "RichTextBoxMessages"
-        Me.RichTextBoxMessages.Size = New System.Drawing.Size(315, 192)
+        Me.RichTextBoxMessages.Size = New System.Drawing.Size(315, 232)
         Me.RichTextBoxMessages.TabIndex = 6
         Me.RichTextBoxMessages.Text = ""
+        '
+        'ButtonGrayMaze
+        '
+        Me.ButtonGrayMaze.Enabled = False
+        Me.ButtonGrayMaze.Location = New System.Drawing.Point(456, 362)
+        Me.ButtonGrayMaze.Name = "ButtonGrayMaze"
+        Me.ButtonGrayMaze.Size = New System.Drawing.Size(181, 43)
+        Me.ButtonGrayMaze.TabIndex = 7
+        Me.ButtonGrayMaze.Text = "Gray Maze"
+        Me.ButtonGrayMaze.UseVisualStyleBackColor = True
+        '
+        'ButtonPrunning
+        '
+        Me.ButtonPrunning.Enabled = False
+        Me.ButtonPrunning.Location = New System.Drawing.Point(450, 30)
+        Me.ButtonPrunning.Name = "ButtonPrunning"
+        Me.ButtonPrunning.Size = New System.Drawing.Size(187, 44)
+        Me.ButtonPrunning.TabIndex = 8
+        Me.ButtonPrunning.Text = "Prunning"
+        Me.ButtonPrunning.UseVisualStyleBackColor = True
+        '
+        'ButtonAMazeII
+        '
+        Me.ButtonAMazeII.Enabled = False
+        Me.ButtonAMazeII.Location = New System.Drawing.Point(456, 220)
+        Me.ButtonAMazeII.Name = "ButtonAMazeII"
+        Me.ButtonAMazeII.Size = New System.Drawing.Size(181, 47)
+        Me.ButtonAMazeII.TabIndex = 9
+        Me.ButtonAMazeII.Text = "A-Maze II"
+        Me.ButtonAMazeII.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(1035, 450)
+        Me.Controls.Add(Me.ButtonAMazeII)
+        Me.Controls.Add(Me.ButtonPrunning)
+        Me.Controls.Add(Me.ButtonGrayMaze)
         Me.Controls.Add(Me.RichTextBoxMessages)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.NumericUpDownPrunning)
@@ -126,4 +162,7 @@ Partial Class Form1
     Friend WithEvents NumericUpDownPrunning As NumericUpDown
     Friend WithEvents Label1 As Label
     Friend WithEvents RichTextBoxMessages As RichTextBox
+    Friend WithEvents ButtonGrayMaze As Button
+    Friend WithEvents ButtonPrunning As Button
+    Friend WithEvents ButtonAMazeII As Button
 End Class
